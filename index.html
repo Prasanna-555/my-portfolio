@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jalasutrapu Lakshmi Prasanna | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Jalasutrapu Lakshmi Prasanna</h1>
+        <p>Software Engineering Student | Web Developer | AI Enthusiast</p>
+        <div class="header-buttons">
+          <a href="https://github.com/Prasanna-555" target="_blank"><button>Github</button></a>
+          <a href="mailto:prasannajalasutrapu@gmail.com"><button>Email</button></a>
+          <a href="https://flowcv.com/resume/1stfksajmovh" target="_blank"><button>View Resume</button></a>
+          <button onclick="toggleTheme()">Toggle Theme</button>
+        </div>
+      </div>
+      <div class="header-image">
+        <img src="C:\Users\prasa\Downloads\my resume pic.jpg" alt="Profile Picture" class="profile-pic" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-summary" onclick="showAboutModal()">
+        <p>Click to learn more about me!</p>
+      </div>
+    </section>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeAboutModal()">&times;</span>
+        <h3>More About Me</h3>
+        <p>I am a passionate software engineering student with a strong foundation in programming, web development, and AI. I enjoy solving real-world problems through technology and constantly improving my skills through internships, courses, and projects.</p>
+        <p>My goal is to contribute meaningfully to organizations by applying both technical and interpersonal abilities. I thrive in collaborative environments and am committed to continuous learning.</p>
+      </div>
+    </div>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="timeline-container" id="educationTimeline"></div>
+    </section>
+
+    <!-- Education Modal -->
+    <div id="educationModal" class="modal hidden">
+      <div class="modal-content"></div>
+    </div>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Java</li><li>C++</li><li>SQL</li><li>HTML</li><li>CSS</li>
+        <li>GitHub</li><li>VS Code</li><li>Leadership</li><li>Communication</li><li>Collaboration</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" onclick="showProjectDetails('resume')">
+          <img src="C:\Users\prasa\OneDrive\Pictures\Desktop\portfolio\AI-Resume-Screening.jpg" alt="Screening System" />
+          <h3>AI-Powered Resume Screening</h3>
+        </div>
+        <div class="project-card" onclick="showProjectDetails('csp')">
+          <img src=c:\Users\prasa\OneDrive\Pictures\Desktop\portfolio\cspimage.jpg alt="Community Service Project" />
+          <h3>Community Service Project</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="projectDetails" class="modal hidden"></div>
+
+    <section id="experience">
+      <h2>Internship</h2>
+      <p><strong>Web Development Intern</strong> at ExcelR EdTech Pvt. Ltd. (May 2024 - July 2024)</p>
+      <ul>
+        <li>Gained hands-on experience in HTML, CSS, and JavaScript</li>
+        <li>Worked in a collaborative team environment</li>
+        <li>Learned to use VS Code and GitHub effectively</li>
+      </ul>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <ul>
+        <li>NPTEL - Java Programming (Elite)</li>
+        <li>NPTEL - Python for Data Science</li>
+        <li>Google Cloud & Trailhead Badges</li>
+        <li>Infosys Springboard Certifications</li>
+      </ul>
+    </section>
+
+    <section id="organizations">
+      <h2>Organizations</h2>
+      <p><strong>Student Co-Ordinator, NSTTP-2024</strong> – Coordinated training events for 200+ students, managed logistics, and led a team of volunteers.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:prasannajalasutrapu@gmail.com">prasannajalasutrapu@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Prasanna-555" target="_blank">github.com/Prasanna-555</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Email: <a href="mailto:prasannajalasutrapu@gmail.com">prasannajalasutrapu@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Prasanna-555" target="_blank">github.com/Prasanna-555</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
